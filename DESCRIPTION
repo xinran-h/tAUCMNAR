@@ -1,11 +1,14 @@
 Package: tAUCMNAR
 Type: Package
-Title: What the Package Does (Short Line)
+Title: Addressing Data and Heterogeneity in Prognostic Biomarker Assessment
 Version: 1.0
 Date: 2025-03-15
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line).
+Authors@R: person(given = "Xinran",
+           family = "Huang",
+           role = c("aut", "cre"),
+           email = "huangxrtc@gmail.com",
+           comment = c(ORCID = "0000-0002-8126-9735"))
+Description: This package addresses the challenge of handling nonignorable missingness in biomarker values when evaluating potential heterogeneity in the discriminatory performance of biomarkers, based on the manuscript “Addressing Nonignorable Missing Data and Heterogeneity in Prognostic Biomarker Assessment”.
 License: MIT + file LICENSE
 Imports: 
     dplyr,
@@ -14,8 +17,12 @@ Imports:
     stats,
     tidyr
 LinkingTo: Rcpp, RcppArmadillo
-Depends: 
-    R (>= 2.10)
 LazyData: true
 Encoding: UTF-8
 RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    fastglm
+Depends: 
+    R (>= 2.10)
