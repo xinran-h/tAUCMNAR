@@ -151,7 +151,7 @@ This data is a dataframe of 1000 rows and 7 columns:`ID`, `Y`, `delta`, `z`, `u`
 - `V` A missing indicator for biomarker values, V = 1 if observed, V = 0 if missing
 
 The biomarker `M` is missing for some patients. We model the probability of the biomarker being
-observed using the following logistic regression: $logit{\pi_i(\boldsymbol{\phi})} = \phi_0 + \phi_1 z_{i} + \phi_2 M_i +  \phi_3 Y_i + \phi_4 \delta_i$. We estimate the coefficients using two-step GMM estimation based on the unbiased estimating $ \sum_{i=1}^{n} \eta_i [ \frac{V_i}{\pi_i(\phi)} - 1 ]/n $,
+observed using the following logistic regression: $logit{\pi_i(\boldsymbol{\phi})} = \phi_0 + \phi_1 z_{i} + \phi_2 M_i +  \phi_3 Y_i + \phi_4 \delta_i$. We estimate the coefficients using two-step GMM estimation based on the unbiased estimating $\sum_{i=1}^{n} \eta_i[\frac{V_i}{\pi_i(\phi)} - 1 ]/n$,
 where $\eta_i = (z_{i}, u_i, 1-u_i, Y_i, \delta_i)^T$. The following code estimates the probability of observing the biomarker for each patient and stores the result in a list named `phi.info`.
 ```{r, eval  = F}
 
