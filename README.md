@@ -228,11 +228,10 @@ The biomarker `M` is missing for some patients. We model the probability
 of the biomarker being observed using the following logistic regression:
 $logit{\pi_i(\boldsymbol{\phi})} = \phi_0 + \phi_1 z_{i} + \phi_2 M_i +  \phi_3 Y_i + \phi_4 \delta_i$.
 We estimate the coefficients using two-step GMM estimation based on the
-unbiased estimating
-$$ \frac{1}{n} \sum_{i=1}^{n} \eta_i [ \frac{V_i}{\pi_i(\phi)} - 1 ] $$,
-where $\eta_i = (z_{i}, u_i, 1-u_i, Y_i, \delta_i)^T$. The following
-code estimates the probability of observing the biomarker for each
-patient and stores the result in a list named `phi.info`.
+unbiased estimating \$ \_{i=1}^{n} \_i \[  - 1 \]/n \$, where
+$\eta_i = (z_{i}, u_i, 1-u_i, Y_i, \delta_i)^T$. The following code
+estimates the probability of observing the biomarker for each patient
+and stores the result in a list named `phi.info`.
 
 ``` r
 
