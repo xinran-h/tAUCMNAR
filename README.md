@@ -257,7 +257,7 @@ To analyze the impact of covariates on the time-dependent AUC under
 nonignorable missing, we apply the following regression model:
 
 $$
-     \eta\{AUC(t;z,\theta\} = \sum\limits_{j=0}^{J} \alpha_{0} t^{0.5} + \alpha_{1} t + \alpha_{0} t^{2} + \beta z
+     logit{AUC(t;z,\theta)} =  \alpha_{0} t^{0.5} + \alpha_{1} t + \alpha_{0} t^{2} + \beta z
 $$
 
 The goal is to estimate the regression coefficients $\beta$ and make
