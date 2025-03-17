@@ -228,6 +228,7 @@ The biomarker `M` is missing for some patients. We model the probability
 of the biomarker being observed using the following logistic regression:
 
 $$ logit\{\pi_i(\boldsymbol{\phi})\} = \phi_0 + \phi_1 z_{i} + \phi_2 M_i +  \phi_3 Y_i + \phi_4 \delta_i $$.
+
 We estimate the coefficients using two-step GMM estimation based on the
 unbiased estimating equations:
 $$  h_n(\boldsymbol{\phi}) = \sum_{i=1}^n \left [ \boldsymbol{\eta}_i \left \{V_i/\pi_i(\boldsymbol{\phi}) - 1\right \}\right]/n, $$
