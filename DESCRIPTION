@@ -1,0 +1,21 @@
+Package: tAUCMNAR
+Type: Package
+Title: What the Package Does (Short Line)
+Version: 1.0
+Date: 2025-03-15
+Author: Who wrote it
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line).
+License: MIT + file LICENSE
+Imports: 
+    dplyr,
+    Rcpp (>= 1.0.11),
+    rlang,
+    stats,
+    tidyr
+LinkingTo: Rcpp, RcppArmadillo
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Encoding: UTF-8
+RoxygenNote: 7.3.2
