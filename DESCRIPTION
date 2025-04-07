@@ -6,7 +6,7 @@ Date: 2025-03-15
 Authors@R: person(given = "Xinran",
            family = "Huang",
            role = c("aut", "cre"),
-           email = "huangxrtc@gmail.com",
+           email = "huangxr.2019@gmail.com",
            comment = c(ORCID = "0000-0002-8126-9735"))
 Description: This package addresses the challenge of handling nonignorable missingness in biomarker values when evaluating potential heterogeneity in the discriminatory performance of biomarkers, based on the manuscript “Addressing Nonignorable Missing Data and Heterogeneity in Prognostic Biomarker Assessment”.
 License: MIT + file LICENSE
